@@ -1,4 +1,3 @@
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class Calculator {
@@ -49,17 +48,17 @@ public class Calculator {
             outputHolder[arrayCounter++] = helpMaintainInfo;
         }
         --arrayCounter;
-        String outPut = "";
+        StringBuilder outPut = new StringBuilder();
         System.out.print("Output: ");    //printing the binary result using a loop to check the content of the array
         while (arrayCounter >= 0) {
 
             int use = (int) outputHolder[arrayCounter--];
             System.out.print(use);
-            outPut = outPut + use; // keeping the number to a string
+            outPut.append(use); // keeping the number to a string
         }
 
         System.out.println();
-        System.out.println(Integer.parseInt(outPut, 2)); //parsing the int using one method that converts
+        System.out.println(Integer.parseInt(outPut.toString(), 2)); //parsing the int using one method that converts
     }
 
     private static void checkIfItIsBinaryNum(Scanner sc, long n1) {

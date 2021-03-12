@@ -20,8 +20,9 @@ public class Loan {
     public Loan(String name, int afm, double amount, double rate, double paidAmount) {
         this.name = name;
         int count = 0;
-        while(afm!=0){
-            afm = afm/10;
+        int afmCopy = afm;
+        while(afmCopy!=0){ //to count the digit
+            afmCopy = afmCopy/10;
             count++;
         }
         if(count == 9){ //checks if the afm is valid
