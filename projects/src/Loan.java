@@ -78,48 +78,24 @@ public class Loan {
         return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
     public int getAfm() {
         return afm;
-    }
-
-    public void setAfm(int afm) {
-        this.afm = afm;
     }
 
     public double getAmount() {
         return amount;
     }
 
-    public void setAmount(double amount) {
-        this.amount = amount;
-    }
-
     public double getRate() {
         return rate;
-    }
-
-    public void setRate(double rate) {
-        this.rate = rate;
     }
 
     public double getPaidAmount() {
         return paidAmount;
     }
 
-    public void setPaidAmount(double paidAmount) {
-        this.paidAmount = paidAmount;
-    }
-
     public double getRemainder() {
         return remainder;
-    }
-
-    public void setRemainder(double remainder) {
-        this.remainder = remainder;
     }
 
 }
