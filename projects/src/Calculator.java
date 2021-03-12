@@ -55,11 +55,11 @@ public class Calculator {
 
             int use = (int) outputHolder[arrayCounter--];
             System.out.print(use);
-            outPut = outPut + use;
+            outPut = outPut + use; // keeping the number to a string
         }
 
         System.out.println();
-        System.out.println(Integer.parseInt(outPut, 2));
+        System.out.println(Integer.parseInt(outPut, 2)); //parsing the int using one method that converts
     }
 
     private static void checkIfItIsBinaryNum(Scanner sc, long n1) {
