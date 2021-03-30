@@ -1,3 +1,5 @@
+package com.leo.proj;
+
 import java.util.Scanner;
 
 public class Loan {
@@ -63,7 +65,7 @@ public class Loan {
         double rate = sc.nextDouble();
         System.out.println("Input the amount you have already paid");
         double paidAmount = sc.nextDouble();
-        return new Loan(name,afm,amount,rate,paidAmount);//returns a new Loan with users input
+        return new Loan(name,afm,amount,rate,paidAmount);//returns a new com.leo.proj.Loan with users input
     }
     public static void print(Loan l){//gets and prints loans attributes from the getters
         System.out.println("\nAfm: "+l.getAfm()

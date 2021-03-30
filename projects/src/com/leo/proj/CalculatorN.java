@@ -1,3 +1,5 @@
+package com.leo.proj;
+
 import java.util.Scanner;
 public class CalculatorN {
     public static void main(String[] args)

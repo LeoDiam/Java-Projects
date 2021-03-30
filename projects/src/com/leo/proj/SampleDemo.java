@@ -1,3 +1,5 @@
+package com.leo.proj;
+
 public class SampleDemo implements Runnable{
     private String threadName;
     private Thread t;

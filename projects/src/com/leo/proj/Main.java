@@ -1,3 +1,5 @@
+package com.leo.proj;
+
 public class Main {
     public static void main(String[] args) {
         Loan loan = new Loan();//creating the objects requested
@@ -8,8 +10,8 @@ public class Main {
         Loan.print(loan2);
         Loan.print(loan3);
 
-        Loan [] bank = new Loan[10];//created bank array
-        for(int i = 0; i < bank.length; i++){ //asking the clients info (the remainder is calculated automatically on Loan's constructor)
+        Loan[] bank = new Loan[10];//created bank array
+        for(int i = 0; i < bank.length; i++){ //asking the clients info (the remainder is calculated automatically on com.leo.proj.Loan's constructor)
             bank[i] = Loan.read();
         }
         for (Loan value : bank) { // printing the bank's elements
